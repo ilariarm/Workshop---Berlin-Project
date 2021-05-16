@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Berlin 🐻</title>
+    <style>
+      h1 {
+        background: #f4d1d6;
+        border: 1px solid #0e59ef;
+        border-radius: 4px;
+        color: #013baa;
+        font-weight: 600;
+        padding: 20px;
+        text-align: center;
+      }
+      h2 {
+        color: #d86be2;
+        font-size: 20px;
+        line-height: 50px;
+        max-width: 100%;
+        padding: 15px;
+        text-align: center;
+      }
+      img {
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 20px 0 10px;
+        text-align: justify;
+      }
+      button {
+        background-color: #013baa;
+        border-radius: 12px;
+        border: none;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        display: block;
+        font-size: 18px;
+        margin: 0 auto;
+        padding: 20px 40px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #ffffff;
+        color: #013baa;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      ul {
+        font-size: 16px;
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 10px 5px;
+      }
+      .container {
+        background: linear-gradient(#f4d1d6, #ffffff);
+        font-family: "Courier New", Courier, monospace;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .learn-more {
+        color: #d75eae;
+        display: block;
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-decoration: none;
+      }
+      .learn-more.hover {
+        text-decoration: underline;
+      }
+      .footer {
+        font-size: 16px;
+        margin-top: 40px;
+        text-align: center;
+      }
+      .description {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Why I ❤️ Berlin</h1>
+      <h2>"Arm aber sexy"</h2>
+      <a href="https://www.bvg.de/en" target="_blank"
+        ><img
+          src="https://media.cool-cities.com/oberbaumbruecke_berlin001_istock_mob.jpg?h=730"
+          alt="Ubahn at OberbaumBruecke"
+      /></a>
+      <p>
+        Come to explore Berlin and discover its
+        <span class="description">different identities</span>,
+        <span class="description">colorful culture</span>,
+        <span class="description">weird architecture</span>,
+        <span class="description">amazing food</span>,
+        <span class="description">unforgettable parties</span>, and
+        <span class="description"> creative energies</span> that made it one of
+        the most vibrant cities in Europe.<br /><br />
+      </p>
+      <hr />
+      <a
+        href="https://en.wikipedia.org/wiki/Berlin"
+        target="_blank"
+        class="learn-more"
+        ><strong
+          >Learn more about Berlin on its glorious
+          <em>Wikipedia</em> page!</strong
+        ></a
+      >
+      <hr />
+      <p>
+        Berlin offers an eclectic mix of history, fun, culture, nature:
+        <br />
+      </p>
+      <lu>
+        <li>🥁 clubs and music for all the tastes</li>
+        <li>🎨 every sort of art with its museums and galleries</li>
+        <li>🌭 amazing food for all budgets</li>
+        <li>🐿 +2,000 parks and 3,000 lakes</li>
+      </lu>
+      <p>
+        Independently from the season, there are so many things to see!<br /><br />
+      </p>
+      <button class="book-button">Book a tour</button>
+      <p class="footer">
+        This page was coded by
+        <a
+          href="https://www.linkedin.com/in/ilariaromanoprofile"
+          target="_blank"
+          >Ilaria Romano</a
+        >
+        👩🏻‍💻
+      </p>
+    </div>
+    <script>
+      function book() {
+        let name = prompt("What's your name?");
+        let age = prompt("How old are you?");
+        if (age <= 17) {
+          alert("Sorry " + name + ", you cannot book a tour yet 😿");
+        } else {
+          if (age < 100) {
+            alert("Thanks " + name + " for booking a tour! 😻");
+          } else {
+            alert("Sorry " + name + ", you are too old 😽");
+          }
+        }
+      }
+      let bookButton = document.querySelector(".book-button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
